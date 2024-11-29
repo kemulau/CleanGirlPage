@@ -1,6 +1,7 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: url('../img/background.jpg'); 
+    background-image: url('../img/background.jpg');
+    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     color: #343a40;
@@ -9,7 +10,7 @@ body {
 }
 
 .cabecalho {
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: rgba(255, 255, 255, 0.8);
     color: #333;
     padding: 40px 20px;
     text-align: center;
@@ -28,23 +29,24 @@ body {
 
 .galeria {
     padding: 20px;
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 20px; 
-    justify-content: center; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 imagens por linha */
+    gap: 20px;
+    justify-content: center;
 }
 
 .galeria img {
-    width: 100%; 
-    max-width: 300px; 
-    height: auto;
-    border-radius: 10px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease; 
+    width: 100%;
+    max-width: 120px; /* Ajuste para imagens menores */
+    height: 120px; /* Imagens quadradas */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
 .galeria img:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 .formulario-contato {
@@ -54,24 +56,39 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
     max-width: 600px;
+}
+
 .formulario-contato .form-label {
     font-weight: 500;
     color: #333;
 }
 
+.formulario-contato .form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.formulario-contato .form-control:focus {
+    border-color: #e75480;
+    box-shadow: 0 0 5px rgba(231, 84, 128, 0.5);
+}
+
 .formulario-contato .btn-primario {
-    background-color: #e75480; 
+    background-color: #e75480;
     border: none;
     color: white;
     padding: 10px 20px;
     font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .formulario-contato .btn-primario:hover {
-    background-color: #d9436a; 
+    background-color: #d9436a;
 }
 
 .rodape {
@@ -80,4 +97,4 @@ body {
     font-size: 0.9rem;
     padding: 10px;
     text-align: center;
-}}
+}
