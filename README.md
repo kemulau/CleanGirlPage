@@ -1,46 +1,41 @@
 # **Clean Girl Page 🌸**
 
-✨ Bem-vindo ao **Clean Girl Page**! Um projeto inspirado no estilo minimalista e elegante do movimento "Clean Girl". Este site oferece simplicidade, funcionalidade e um visual clean.
-
 ---
 
 ## **🎯 Objetivos do Projeto**
 - Criar uma experiência visual agradável e responsiva.
 - Oferecer uma navegação simples entre as páginas **Home**, **Galeria** e **Contato**.
-- Demonstrar organização no desenvolvimento com **HTML**, **CSS** e **Bootstrap**.
+- Adicionar funcionalidades de backend e melhorias interativas no futuro.
 
 ---
 
 ## **⚙️ Funcionalidades**
-- **Página Inicial (Home):** Apresenta o conceito do projeto com links para as demais páginas.
+### Implementadas
+- **Página Inicial (Home):** Links para navegação entre as páginas.
 - **Galeria:** Grade de imagens organizadas em 4 colunas, com efeito de zoom.
-- **Contato:** Formulário funcional para envio de mensagens.
+- **Contato:** Formulário funcional com campos de entrada estilizados.
+
+### Planejadas
+- **Backend para o Formulário de Contato:**
+  - Processar dados enviados pelo formulário e armazenar ou enviar por e-mail.
+- **Carregamento Dinâmico da Galeria:**
+  - Adicionar JavaScript para atualizar imagens dinamicamente.
+- **Feedback Visual no Formulário:**
+  - Mensagens de sucesso ou erro após o envio do formulário.
+- **Melhorias Mobile:**
+  - Aprimorar o layout para dispositivos móveis.
 
 ---
 
-## **📅 Cronograma**
+## **📅 Cronograma Atualizado**
 | **Etapa**               | **Descrição**                                   | **Prazo**        |
 |-------------------------|-------------------------------------------------|------------------|
 | Refinamento das Páginas | Ajustar detalhes visuais e funcionais do site.  | **30/11/2024**   |
 | Testes e Correções      | Realizar testes de responsividade e revisar o código. | **01/12/2024**   |
-| Documentação            | Finalizar o arquivo `README.md` e validar a entrega. | **02/12/2024**   |
-
----
-
-## **📖 Documentação do Desenvolvimento**
-### **Processo de Desenvolvimento**
-- Planejamento inicial das páginas e escolha de uma abordagem clean.
-- Estruturação com **HTML**, design com **CSS** e responsividade com **Bootstrap**.
-- Adição de funcionalidades específicas para cada página: Home, Galeria e Contato.
-
-### **Desafios Enfrentados**
-- **Responsividade:** Ajustar a galeria para exibir 4 colunas de imagens uniformes foi um desafio superado com `grid-template-columns` e `object-fit: cover`.
-- **Conexão entre páginas:** Garantir navegação fluida entre as páginas Home, Galeria e Contato.
-
-### **Como o Git Ajudou**
-- **Commits frequentes:** Cada mudança foi documentada, facilitando rastreio e reversões.
-- **Branches isoladas:** Organizar as funcionalidades separadamente evitou conflitos.
-- **Histórico claro:** Mensagens de commits descritivas ajudaram a acompanhar o progresso.
+| Backend para Formulário | Implementar backend para envio e armazenamento das mensagens. | **05/12/2024**   |
+| Testes do Backend       | Testar o envio e recebimento do formulário integrado. | **06/12/2024**   |
+| Integração Final        | Garantir a integração entre frontend e backend. | **07/12/2024**   |
+| Documentação Final      | Atualizar o README.md com instruções para o backend e melhorias. | **08/12/2024**   |
 
 ---
 
@@ -48,6 +43,7 @@
 - **HTML5**
 - **CSS3**
 - **Bootstrap 5**
+- **Planejado:** **Node.js** ou **PHP** para backend, **JavaScript** para interatividade.
 
 ---
 
